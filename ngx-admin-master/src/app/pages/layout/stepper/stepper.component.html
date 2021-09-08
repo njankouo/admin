@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>order</title>
+</head>
+<body>
+<div class="row">
+  <div class="col-md-12">
+    <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Orders</h3>
+
+                <div class="card-tools">
+                  <div class="input-group input-group-sm" style="width: 350px;float: right;">
+    <input type="text" name="User" class="form-control" placeholder="Search" [(ngModel)]="hotelFilter"><b>{{hotelFilter}}</b>
+
+                    <div class="input-group-append">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body table-responsive p-0" style="height: 300px;">
+                <table class="table table-head-fixed text-nowrap">
+                  <thead>
+                    <tr>
+                      <th style="width: 15%;">ID</th>
+                      <th style="width: 25%;">User</th>
+                      <th style="width: 15%;">Date</th>
+                      <th style="width: 15%;">Status</th>
+                      <th style="width: 15%;">Reason</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let liste of filteredHotels">
+                      <td>{{liste.id}}</td>
+                      <td>{{liste.user}}</td>
+                      <td>{{liste.date}}</td>
+                      <td>{{liste.status}}</td>
+                      <td>{{liste.reason}}</td>
+                      </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+        </div>
+  </div>
+  
+</div>
+</body>
+</html>

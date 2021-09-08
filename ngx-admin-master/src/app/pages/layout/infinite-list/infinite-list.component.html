@@ -1,0 +1,137 @@
+<!-- <div class="infinite-cards row">
+  <div class="col-md-12 col-lg-6 col-xxxl-6">
+    <nb-card class="own-scroll">
+      <nb-card-header>Own Scroll</nb-card-header>
+      <nb-list
+        nbInfiniteList
+        [threshold]="500"
+        (bottomThreshold)="loadNext(firstCard)">
+        <nb-list-item *ngFor="let newsPost of firstCard.news">
+          <ngx-news-post [post]="newsPost"></ngx-news-post>
+        </nb-list-item>
+        <nb-list-item *ngFor="let _ of firstCard.placeholders">
+          <ngx-news-post-placeholder></ngx-news-post-placeholder>
+        </nb-list-item>
+      </nb-list>
+    </nb-card>
+  </div>
+
+  <div class="col-md-12 col-lg-6 col-xxxl-6">
+    <nb-card>
+      <nb-card-header>Window Scroll</nb-card-header>
+      <nb-list
+        nbInfiniteList
+        listenWindowScroll
+        [threshold]="500"
+        (bottomThreshold)="loadNext(secondCard)">
+        <nb-list-item *ngFor="let newsPost of secondCard.news">
+          <ngx-news-post [post]="newsPost"></ngx-news-post>
+        </nb-list-item>
+        <nb-list-item *ngFor="let _ of secondCard.placeholders">
+          <ngx-news-post-placeholder></ngx-news-post-placeholder>
+        </nb-list-item>
+      </nb-list>
+    </nb-card>
+  </div>
+</div>
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+
+
+<div class="row">
+  <div class="col-md-12">
+    <nav class="main-header navbar navbar-expand-md navbar-light navbar-white" style="font-weight: bold; margin-top: 5px;">
+    <div class="container">
+      
+        <b class="brand-text font-weight-light">Search</b>
+      
+
+      <!-- Right navbar links -->
+      <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
+        <!-- Messages Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#">
+            <b>Home</b>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <a href="#" class="dropdown-item">
+              <!-- Message Start -->
+              <div class="media">
+                 <div class="media-body">
+                  <b class="dropdown-item-title active">
+                    Orders
+                  </b>
+                 
+                </div>
+              </div>
+              <!-- Message End -->
+            </a>
+           
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <!-- Message Start -->
+      
+              <!-- Message End -->
+            </a>
+                    </div>
+        </li>
+        <!-- Notifications Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            
+            <span class="badge badge-warning navbar-badge">Orders</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#"><p>Export</p></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  </div>
+</div>
+<input type="Search" name="" style="width: 30%;height: 40px;"placeholder="Search customer name">&nbsp;&nbsp;&nbsp;
+<input type="Search" name="" style="width: 30%;height: 40px;"placeholder="Search customer mobile number ">&nbsp;  &nbsp;  &nbsp;  &nbsp;&nbsp;
+&nbsp;
+
+<a href="" class="btn btn-primary" style="color:white;"><i class="fas fa-database">&nbsp;&nbsp;Search Order(s)</i></a>&nbsp;&nbsp;
+   
+   <a href="" class="btn btn-light" style="color:black;"><i class="fas fa-redo-alt">&nbsp;&nbsp;Reset</i> </a>
+<br><br>
+  <div class="row">
+
+    <div class="col-md-12">
+      <table id="example" class="table table-striped table-bordered dataTable" style="width: 100%; font-size: 12px;" aria-describedby="example_info">
+            <thead>
+              <tr>
+                <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending" style="width: 48px;">Order number</th>
+                <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 58px;">Store</th>
+                <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending" style="width: 49px;">Order Date</th>
+                <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending" style="width: 29px;">Agent</th>
+                <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Start date: activate to sort column ascending" style="width: 59px;">Order Status</th>
+                <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Salary: activate to sort column ascending" style="width: 59px;">Shipping Status</th>
+                 <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Salary: activate to sort column ascending" style="width: 59px;">Remittance</th>
+                  <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Salary: activate to sort column ascending" style="width: 59px;">Tracking Number</th>
+                   <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Salary: activate to sort column ascending" style="width: 59px;">View</th>
+                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Salary: activate to sort column ascending" style="width: 59px;">History</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td></td>
+            </tr>  
+      
+            </tbody>
+          </table>
+
+    
+  </div>
+</div>
+</body>
+</html>

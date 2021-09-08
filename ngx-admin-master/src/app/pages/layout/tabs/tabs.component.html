@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+
+
+<div class="row">
+  <div class="col-md-12">
+    <nav class="main-header navbar navbar-expand-md navbar-light navbar-white" style="font-weight: bold;">
+    <div class="container">
+      
+        <b class="brand-text" style="margin-left: 0;">Transfer Orders</b>
+      
+
+      <!-- Right navbar links -->
+      <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
+        <!-- Messages Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#">
+            <b>Home</b>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <a href="#" class="dropdown-item">
+              <!-- Message Start -->
+              <div class="media">
+                 <div class="media-body">
+                  <b class="dropdown-item-title active">
+                    Orders
+                  </b>
+                 
+                </div>
+              </div>
+              <!-- Message End -->
+            </a>
+           
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <!-- Message Start -->
+      
+              <!-- Message End -->
+            </a>
+                    </div>
+        </li>
+        <!-- Notifications Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            
+            <span class="badge badge-warning navbar-badge">Orders</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#"><p>Export</p></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-md-5">
+      
+  <select class="form-control form-control-lg">
+  <option></option>
+</select>
+</div>
+<div class="col-md-5">
+<select class="form-control">
+  <option></option>
+</select>
+</div>
+<div class="col-md-2">
+<button type="button" class="btn btn-primary">Apply</button>&nbsp;&nbsp;
+<button type="button" class="btn btn-light">Reset</button>
+</div>
+<br><br><br>
+<div class="col-md-6">
+<select class="form-control">
+  <option></option>
+</select>
+ </div>
+ <div class="col-md-2">
+   <button type="button" class="btn btn-warning">transfer argent</button>
+ </div><br><br><br><br>
+ <div class="col-md-12">
+ 
+<div class="container">
+<div class="table-responsive">
+  <table id="example" class="table table-striped" style="width:100%">
+        <thead>
+            <tr>
+                <th>
+                     <input class="form-check-input" type="checkbox" id="masterCheck" value="checkUncheckAll">
+                    <label class="form-check-label" for="masterCheck"></label>
+             
+            </th>
+                <th>Store</th>
+                <th>Order Number</th>
+                <th>Order Date</th>
+                <th>Customer</th>
+                <th>Order Amount</th>
+                <th>Agent</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let listes of liste">
+                    <td><input class="form-check-input" type="checkbox" id="row1" name="row-check" value="Lavina Cassin">
+                    <label class="form-check-label" for="row1"></label>
+            </td>
+              <td>{{listes.store}}</td>
+                <td>{{listes.order_number}}</td>
+                <td>{{listes.order_date}}</td>
+                <td>{{listes.customer}}</td>
+                <td>{{listes.order_amount}}</td>
+                <td>{{listes.agent}}</td>
+                
+               
+                
+                
+          </tr>
+           
+          </tbody>
+        </table>
+   <!--  <table class="table" style="width:100%;">
+        <thead>
+            <tr>
+                <th scope="col">
+                    <input class="form-check-input" type="checkbox" id="masterCheck" value="checkUncheckAll">
+                    <label class="form-check-label" for="masterCheck"></label>
+                </th>
+                <th scope="col">Store</th>
+                <th scope="col">Order Number</th>
+                <th scope="col">Order Date</th>
+                <th scope="col">Customer</th>
+                <th scope="col">Order Amount</th>
+                <th scope="col">Agent</th>
+            </tr>
+        </thead>
+        <tbody>
+          
+            <tr *ngFor="let listes of liste">
+                <td>
+                    <input class="form-check-input" type="checkbox" id="row1" name="row-check" value="Lavina Cassin">
+                    <label class="form-check-label" for="row1"></label>
+                </td>
+                <td>{{listes.store}}</td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="form-check-input" type="checkbox" id="row2" name="row-check"
+                        value="Herminio Schimmel">
+                    <label class="form-check-label" for="row2"></label>
+                </td>
+                <td>{{listes.order_number}}</td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="form-check-input" type="checkbox" id="row3" name="row-check" value="Anika Little">
+                    <label class="form-check-label" for="row3"></label>
+                </td>
+                 <td>{{listes.order_date}}</td>
+            </tr>
+
+
+              <tr>
+                <td>
+                    <input class="form-check-input" type="checkbox" id="row4" name="row-check" value="Anika Little">
+                    <label class="form-check-label" for="row3"></label>
+                </td>
+                
+                <td>{{listes.customer}}</td>
+            </tr>
+
+             <tr>
+                <td>
+                    <input class="form-check-input" type="checkbox" id="row5" name="row-check" value="Anika Little">
+                    <label class="form-check-label" for="row3"></label>
+                </td>
+                
+                <td>{{listes.order_amount}}</td>
+            </tr>
+             <tr>
+                <td>
+                    <input class="form-check-input" type="checkbox" id="row4" name="row-check" value="Anika Little">
+                    <label class="form-check-label" for="row3"></label>
+                </td>
+             <td>{{listes.agent}}</td>
+            </tr>
+     
+
+        </tbody>
+    </table> -->
+</div>
+</div>
+  </div>
+  </div>
+  
+  </body>
+</html>

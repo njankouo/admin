@@ -1,0 +1,41 @@
+nb-tabset {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+:host ::ng-deep ngx-tab1, :host ::ng-deep ngx-tab2 {
+  display: block;
+  padding: 1rem 2rem;
+}
+table{
+    width:100%;
+}
+#example_filter{
+    float:right;
+}
+#example_paginate{
+    float:right;
+}
+label {
+    display: inline-flex;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+   
+}
+table.table{
+  width: 300px;
+  border-collapse:collapse;
+  float: left;
+}
+table.table:last-of-type{
+  margin-left:10px;
+}
+table.table th{
+  text-align:left;
+}
+
+table.table tbody tr.selected {
+    background-color: #f0f0f0;
+}
+
